@@ -24,14 +24,14 @@ public class DataManager : MonoBehaviour
         enemyPos = new Positions();
 
         //Prueba de XML
-        CharacterPosition cp = new CharacterPosition("Prueba", 123123123, Vector3.right);
+        /*CharacterPosition cp = new CharacterPosition("Prueba", 123123123, Vector3.right);
         XmlSerializer serializer = new XmlSerializer(typeof(CharacterPosition));
         using (FileStream stream = new FileStream("exampleXML.xml", FileMode.Create))
         {
             serializer.Serialize(stream, cp);
         }
         PlayerPrefs.SetString("nombre", "MaxUser");
-        Debug.Log(PlayerPrefs.GetString("nombre"));
+        Debug.Log(PlayerPrefs.GetString("nombre"));*/
     }
 
     // Update is called once per frame
