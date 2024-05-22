@@ -21,8 +21,9 @@ public class DataManager : MonoBehaviour
         prevTime = Time.realtimeSinceStartup;
         prevSaveTime = prevTime;
         playerPos = new Positions();
+        DBManager.Instance.SavePosition(playerPos);
         enemyPos = new Positions();
-
+        DBManager.Instance.SavePosition(enemyPos);
         //Prueba de XML
         /*CharacterPosition cp = new CharacterPosition("Prueba", 123123123, Vector3.right);
         XmlSerializer serializer = new XmlSerializer(typeof(CharacterPosition));
